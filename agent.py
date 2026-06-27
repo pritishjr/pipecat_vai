@@ -147,8 +147,8 @@ async def main():
     
     tts = CartesiaTTSService(
         api_key=CARTESIA_TTS,
-        settings=CartesiaTTSService(
-            model="sonic-3,5",
+        settings=CartesiaTTSService.Settings(
+            model="sonic-3.5",
             aggregate_sentences=True,
             voice_id="ba2a9c5c-b769-49e3-bc9f-1c2c24bab128", #baron commercial
         ),
